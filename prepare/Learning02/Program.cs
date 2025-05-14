@@ -1,6 +1,3 @@
-using System;
-using System.Security.Cryptography.X509Certificates;
-
 class Program
 {
     static void Main(string[] args)
@@ -21,8 +18,6 @@ class Program
         resume._jobList.Add(job2);
 
         resume.Display();
-
-
     }
 
 }

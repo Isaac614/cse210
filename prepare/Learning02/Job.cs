@@ -10,9 +10,4 @@ public class Job
             Console.WriteLine(_startYear);
             Console.WriteLine(_endYear);
         }
-
-        // public void person()
-        // {
-            
-        // }
     }
