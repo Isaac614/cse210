@@ -5,10 +5,10 @@ public class Entry
     public string _response;
 
     // Without this paramaterless constructor the Journal.ReadFile() method doesn't work
-    public Entry() 
+    public Entry()
     {
     }
-    
+
     public Entry(string date, string prompt, string response)
     {
         _date = date;
@@ -21,3 +21,4 @@ public class Entry
         Console.WriteLine($"\nDate - {_date}\nPrompt - {_prompt}\nResponse - {_response}");
     }
 }
+

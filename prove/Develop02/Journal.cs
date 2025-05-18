@@ -1,6 +1,7 @@
 using System.Text.Json;
 using System.IO;
 using System.Runtime.CompilerServices;
+
 public class Journal
 {
     public List<Entry> _entries = new List<Entry>();
@@ -17,6 +18,7 @@ public class Journal
             entry.DisplayEntry();
         }
     }
+
 
     public void SaveToFile(string fileName)
     {

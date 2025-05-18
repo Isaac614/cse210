@@ -17,7 +17,7 @@ class Program
         bool keepGoing = true;
         while (keepGoing)
         {
-            Console.WriteLine("\nPlease select an option:");
+            TypeText("\nPlease select an option:", 100);
             Console.WriteLine("1. Write in journal");
             Console.WriteLine("2. View journal");
             Console.WriteLine("3. Save Journal");
@@ -35,7 +35,7 @@ class Program
                 userInput = 0;
             }
 
-            switch(userInput)
+            switch (userInput)
             {
                 case 1:
                     string date = DateTime.Now.ToString("yyyy-MM-dd");
@@ -78,11 +78,11 @@ class Program
                     string response = Console.ReadLine();
                     journal.AddEntry(new Entry(date, prompt, response));
                     break;
-                    
+
                 case 2:
                     journal.DisplayJournal();
                     break;
-                
+
                 case 3:
                     Console.WriteLine("What is the name of the file you'd like to save your journal to?");
                     Console.Write("> ");
@@ -120,5 +120,15 @@ class Program
                     break;
             }
         }
-    }       
-}
+    }
+    
+    static void TypeText(string text, int delayMilliseconds)
+    {
+        foreach (char c in text)
+        {
+            Console.Write(c);
+            Thread.Sleep(delayMilliseconds);
+        }
+        Console.WriteLine(); // Move to next line after typing
+    }
+}     
