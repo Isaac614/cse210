@@ -8,3 +8,5 @@ This repository contains the starter code for many different projects. They are 
 * `prepare` - Starter projects for each of the preparation Learning Activities.
 * `prove` - Starter projects for each of the prove Developer projects.
 * `final` - Starter projects for final project.
+
+In develop 03 I use a shorthand way to create getters for some of the fields in Reference. What this does is create a special type method that when called will return the value in the corresponding field.
