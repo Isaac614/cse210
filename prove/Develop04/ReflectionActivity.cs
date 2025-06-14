@@ -32,6 +32,7 @@ public class ReflectionActivity : Activity
 
         List<int> completedPrompts = new List<int>();
 
+        // Instead of using datetime to keep track of the time passed I'm using a built in stopwatch class. 
         Stopwatch stopwatch = new Stopwatch();
         stopwatch.Start();
 

@@ -13,6 +13,7 @@ public class BreathingActivity : Activity
         GetActivityDuration();
         DisplayStartMessage();
 
+        // Instead of using datetime to keep track of the time passed I'm using a built in stopwatch class. 
         Stopwatch stopwatch = new Stopwatch();
         stopwatch.Start();
 
