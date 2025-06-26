@@ -1,0 +1,15 @@
+UserPoints: 0
+
+Type: RecurringGoal
+Description: test
+Points: 100
+Completed: False
+ResetFrequency: 5
+StartDate: 6/26/2025 2:38:32 PM
+
+Type: RecurringGoal
+Description: test goal
+Points: 100000
+Completed: False
+ResetFrequency: 5
+StartDate: 6/26/2025 2:38:37 PM
